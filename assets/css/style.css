@@ -5,9 +5,9 @@
 
 :root {
     
-    --clr-text: #faf9f6;
-    --clr-btn: #0c67ae;
-    --clr-btn-hover: #43abc9;
+    --text: #faf9f6;
+    --btn: #0c67ae;
+    --btn-hover: #43abc9;
     
 }
 
@@ -161,7 +161,7 @@ header .menu-icon{
  border: none;
  outline: none;
  color: #e7f1fa;
- background: var(--clr-btn);
+ background: var(--btn);
  border: 1px solid #b0c4d8;
  border-radius: 20px 5px;
  z-index: 1;
@@ -171,19 +171,26 @@ header .menu-icon{
  }
 
 .btn:hover{
- background: var(--clr-btn-hover);
+ background: var(--btn-hover);
  }
+
+.btn a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'sans-serif';
+}
+
 
 /*The Modal (background) */
 .modal {
- display: none; /* Hidden by default */
- position: fixed; /* Stay in place */
- z-index: 1; /* Sit on top */
- padding-top: 1px; /* Location of the box */
+ display: none; 
+ position: fixed; 
+ z-index: 1;
+ padding-top: 1px; 
  left: 750px;
  top: 80px;
- width: 450px; 
- height: 250px;  
+ width: 400px; 
+ height: 200px;  
  font-family: sans-serif;
  border-radius: 5px;
  background: #fff;
@@ -194,14 +201,13 @@ header .menu-icon{
 .modal-content {
  background-color: #fefefe;
  margin: auto;
- padding: 20px;
+ padding: 18px;
  top:0;
  width: 100%;
- font-family: sans-serif;
  text-align: left;
  }
 
-
+ 
  /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -209,42 +215,57 @@ header .menu-icon{
   font-size: 40px;
   font-weight: bold;
   top: 0;
+  font-family: 'sans-serif';
   }
   
   .close:hover,
   .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
   }
 
 
  .rule-title{     
-    width: 100%;
-    border-bottom: 1px solid lightgrey; 
-    display: flex;
-    align-items: center;
-    padding: 0 5px;
-    border-radius: 5px 5px 0 0;
-    font-size: 20px;
-    font-weight: 600;     
+  width: 100%;
+  border-bottom: 1px solid lightgrey; 
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 5px 5px 0 0;
+  font-size: 20px;
+  font-weight: 600;     
     }
        
-   .rule-title span{
-    font-weight: 600;
-    color: #007bff;
+.rule-title span{
+font-weight: 600;
+color: #007bff;
+font-family: 'sans-serif';
     }
-       
-   .info{
-    margin: 5px 0;
-    font-size: 17px;   
-    }
+
+
+.info{
+margin: 5px 0;
+font-size: 17px;
+font-family: 'sans-serif';   
+}
    
 /* Board game section */
 
 #title {
  height: 150px;
  width: 400px;
+}
+
+
+form{
+  display: flex;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 
@@ -255,7 +276,7 @@ header .menu-icon{
  border: 09px solid #0c67ae;
     
  margin: 0 auto;
- display: flex;
+ display: absolute;
  flex-wrap: wrap;
  }
     
@@ -271,3 +292,14 @@ header .menu-icon{
  font-size: 20px;
  } 
 
+
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+}
+
+ 
+  
+
+  
+ 
