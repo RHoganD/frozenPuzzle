@@ -22,15 +22,43 @@
         <div id="modalbox" class="modal"></div>
 </nav>    
 </header>
-
-
-
             <div id="title" class="hide"></div>
             <div id="board" class="hide">
             </div>
             <h1 class="mov">Moves:<span id="turns" class="mov"> 0 </span></h1>
+            
 </div>  
     
+<div id="newpuzzle">
+
+    <div id="container">  
+        <header class="header">
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <div class="logo"><h1> Frozen Puzzle!</h1> </div> 
+            
+        <nav class="menu">
+            <button id="exit" class="btn"><a href="index.html">Exit</a></button>
+            <input id="reveal" class="btn" type="button" onClick="openWindow()" value="Reveal Puzzle">  
+             <!-- The Modal -->
+            <div id="modalbox" class="modal"></div>
+    </nav>    
+    </header>
+                <div id="title" class="hide"></div>
+                <div id="board" class="hide">
+                </div>
+                <h1 class="mov">Moves:<span id="turns" class="mov"> 0 </span></h1>
+                
+                <div id="pieces"></div>
+    </div>  
+
+
+
+</div>
+
+
+
+
 <script src="/assets/js/modal.js"></script>
 <script src="/assets/js/puzzle.js"></script>
 </body>

@@ -92,22 +92,3 @@ function dragEnd() {
             document.getElementById("turns").innerText = turns;
        }
     }
-
-    // game board Section
-// let board = document.querySelector("#board");
-// let title = document.querySelector("#title");
-// let mov = document.querySelector(".mov");
-
-// //board seciton
-// let menu = document.querySelector(".header");
-// let menu2 =document.querySelector(".header")
-
-// //what happen when 'menu' Button will Click
-// menu.addEventListener("click" , () => {
-// menu.style.display = "block";
-// title.style.display = "none";
-// board.style.display = "none";
-// mov.style.display = "none";
-
-
-
