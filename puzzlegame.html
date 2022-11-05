@@ -9,40 +9,38 @@
     <title>Frozen Puzzle</title>
 </head>
 <body>
- <div id="container">
-    <div><h1 class="logo">Frozen Puzzle!</h1> </div>
-        
+ <div id="container">  
     <header class="header">
         <input class="menu-btn" type="checkbox" id="menu-btn"/>
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
+        <div class="logo"><h1> Frozen Puzzle!</h1> </div> 
         
-       <button id="rule" class="btn">Rule</button>
-       <button id="exit" class="btn"><a href="index.html">Exit</a></button>
-       <input id="reveal" class="btn" type="button" onClick="openWindow()" value="Reveal Puzzle">
-            
+    <nav class="menu">
+        <button id="rule" class="btn">Rule</button>
+        <button id="exit" class="btn"><a href="index.html">Exit</a></button>
+        <input id="reveal" class="btn" type="button" onClick="openWindow()" value="Reveal Puzzle">  
        
-<!-- The Modal -->
-<div id="modalbox" class="modal">
+        <!-- The Modal -->
+        <div id="modalbox" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">x</span>
-    <h4 class="rule-title"><span>The Rules are simple</span></h4>
-    <p class="info">1. You can swap the image with the adjacent.</p>
-    <p class="info">2- sample text in the modal..</p>
-    <p class="info">3- Some text in the Modal..</p>
-    </div>
-  </div>
-</ul>
-        
-        </header>
-             <div id="title"></div>
-            <div id="board">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">x</span>
+        <h4 class="rule-title"><span>The Rules are simple</span></h4>
+        <p class="info">1- You can only swap with the blank tile.</p>
+        <p class="info">2- You can only swap with the one adjacent.</p>
+        </div>
+        </div>
+</nav>    
+</header>
+
+
+
+            <div id="title" class="hide"></div>
+            <div id="board" class="hide">
             </div>
             <h1 class="mov">Moves:<span id="turns" class="mov"> 0 </span></h1>
-            
-    </div>
+</div>  
     
 <script src="/assets/js/modal.js"></script>
 <script src="/assets/js/puzzle.js"></script>

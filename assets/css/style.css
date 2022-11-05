@@ -52,48 +52,51 @@ body{
         font-family: 'sans-serif';
        }
 
-    #start:hover{
-    background: #7f9196;
-    color: #fff;
-    
-    }
+ #start:hover{
+background: #7f9196;
+color: #fff; 
+ }
 
-.logo{ 
- align-items: center;
- text-align: center;
- justify-content: center;
- display: block;
- font-size: 2.5em;
- font-family: 'lobster';   
-    }
 
-  #container{
-    border: 2px solid coral;
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    margin: 50px 100px 0;
-    position: relative;
-    display: grid;
-     }   
+#container{
+border: 2px solid coral;
+width: 100%;
+max-width: 1000px;
+height: auto;
+margin: 60px 200px;
+position: relative;
+display: grid;
+ }   
+   
+.logo{
+margin-left: 250px;
+width: 100%;
+
+ }
+
+.logo h1{
+font-size: 2.5em;
+font-family: 'lobster'; 
+align-items: center;
+text-align: center;
+justify-content: center; 
+ }
+
 
  /* .header */
 
 .header{
- width: 130px;
- float: left;
- z-index: 3;
- margin-right: 150px;     
+  width: 50%;
+  z-index: 1;
+  
 }
 
-.header ul{
+.header nav{
  margin:0;
  padding:0;
- list-style: none;
+/* list-style: none; */
  overflow: hidden;
+ display: block;
   }
 
 .header .menu{
@@ -105,13 +108,10 @@ body{
 header .menu-icon{  
  padding:  28px 20px;
  position: relative;
- float: right;
+ float: left;
  cursor: pointer;
  color: #fff;
 }
-
- 
-
 
  .header .menu-icon .nav-icon{
   background: #fff;
@@ -167,6 +167,8 @@ header .menu-icon{
  transform: rotate(45deg);
  top: 0;
 }   
+
+
 
 .btn{
  height: 50px;
@@ -264,13 +266,6 @@ font-size: 17px;
 font-family: 'sans-serif';   
 }
    
-/* Board game section */
-
-#title {
- height: 150px;
- width: 400px;
-}
-
 
 form{
   display: flex;
@@ -282,25 +277,35 @@ form{
   height: auto;
 }
 
+.hide{
+  display: none;
+}
+
+/* Board game section */
+#title {
+  height: 150px;
+  width: 400px;
+ }
 
 #board {
 /* width: 100%; */
-width: 609px;
+width: 608px;
 /* height: auto; */
-height: 377px;
+height: 375px;
 background-color: lightblue;
-border: 09px solid #0c67ae;
+border: 9px solid coral;
     
 margin: 0 auto;
-display: wrap;
+display: flex;
 flex-wrap: wrap;
- }
+margin-top: 30px;
+}
     
     
 #board img {
  width: 118px;
  height: 118px;
- border: 1px solid #0c67ae;
+ border: 1px solid coral;
 }
 
 .mov{
@@ -310,7 +315,7 @@ flex-wrap: wrap;
 
 
 /* For medium screen sizes from 950px wide and down */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   #start{
     font-size: 20px;
     height: 60px;
@@ -319,15 +324,21 @@ flex-wrap: wrap;
     }
     
     
-    .logo{
-    font-size: 2em;
-    }
+  .logo{
+      font-size: 18px;
+      margin-left: 200px;
+       }
+  
+  #board{
+  width: 430px;
+  height: auto;
+  flex-direction: rows;
 
 }
-
+}
  
   
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 575px) {
 
   #start{
     font-size: 18px;
@@ -338,8 +349,17 @@ flex-wrap: wrap;
     
     
     .logo{
-    font-size: 1.5em;
-    }
+      font-size: 15px;
+    
+     }
+
+#board{
+width: 430px;
+height: auto;
+flex-direction: rows;
+
+     }
+
 }
   
  
