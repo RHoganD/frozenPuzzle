@@ -6,7 +6,6 @@ let btn = document.getElementById("rule");
 let span = document.getElementsByClassName("close")[0];
 
 
-
 // When clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "flex";

@@ -63,13 +63,13 @@ function dragEnd() {
             return;
         }
          //get the coordenate of the image and split
-        let currentCoords = currentTile.id.split("-"); //ex) "0-0" -> ["0", "0"]
-        let cord = parseInt(currentCoords[0]);  //r
-        let cord1 = parseInt(currentCoords[1]); //c
+        let currentCoords = currentTile.id.split("-"); 
+        let cord = parseInt(currentCoords[0]);  
+        let cord1 = parseInt(currentCoords[1]); 
     
         let otherCoords = otherTile.id.split("-");
-        let othcord = parseInt(otherCoords[0]);   //r2
-        let othcord1 = parseInt(otherCoords[1]); //c2
+        let othcord = parseInt(otherCoords[0]);   
+        let othcord1 = parseInt(otherCoords[1]); 
     
          //cheking for adjecency
         let moveLeft = cord == othcord && othcord1 == cord1-1;

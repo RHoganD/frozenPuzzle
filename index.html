@@ -9,13 +9,29 @@
     <title>Frozen Puzzle</title>
 </head>
 <body>
-    
-    <div><h1 class="logo">Frozen Puzzle!</h1> </div>
+    <div id="main-container">
+    <div><h1>Frozen Puzzle!</h1> </div>
  
-    <button id="start">
+    <button id="start" class="rules">
         <a href="puzzlegame.html">Start Puzzle</a>
     </button>
+    <button id="rule" class="rules btn">Rule</button>
+
+         <!-- The Modal -->
+        <div id="modalbox" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close"> Close x</span>
+            <h4 class="rule-title"><span>The Rules are simple</span></h4>
+            <p class="info">1- You can only swap with the blank tile.</p>
+            <p class="info">2- You can only swap with the one adjacent.</p>
+            </div>
+            </div>
+        </div>
 
 
+
+<script src="/assets/js/modal.js"></script>         
 </body>
 </html>
