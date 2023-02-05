@@ -35,28 +35,43 @@ window.onload = function() {
 
 }
 
-    //test code
-    // let pieces = [];
-    // for (let i=1; i <= rows*columns; i++) {
-    //     pieces.push(i.toString()); 
-    // }
+//TEST CODE TO RANDON IMG
+//  imgOrder.reverse();
+//  for (let i =0; i < imgOrder.length; i++) {
+//  let j = Math.floor(Math.random() * imgOrder.length);
 
-    imgOrder.reverse();
-    for (let i =0; i < imgOrder.length; i++) {
-        let j = Math.floor(Math.random() * imgOrder.length);
+//         //swap
+//         let tmp = imgOrder[i];
+//         imgOrder[i] = imgOrder[j];
+//         imgOrder[j] = tmp;
+//   }
+  // END OF CODE TO RANDON IMG EXAMPLE 1
 
-        //swap
-        // let tmp = pieces[i];
-        // pieces[i] = pieces[j];
-        // pieces[j] = tmp;
+
+// TEST CODE EXAMPLE 2
+
+function randomize(values) {
+    let index = values.length,
+      randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (index != 0) {
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * index);
+      index--;
+  
+      // And swap it with the current element.
+      [values[index], values[randomIndex]] = [values[randomIndex], values[index]];
     }
+  
+    return values;
+  }
+  
+  randomize(imgOrder);
 
-    // for (let i = 0; i < pieces.length; i++) {
-    //     let tile = document.createElement("img");
-    //     tile.src = "./assets/images/" + pieces[i] + ".jpg";
+// END OF CODE EXAMPLE 2
 
-    // }
-//end test code
+
 
 
 
@@ -84,7 +99,7 @@ function dragDrop() {
 
 
 function dragEnd() {
-        if (!otherTile.src.includes("01.jpg")) {   //check if swap with blank tile
+        if (!otherTile.src.includes("16.jpg")) {   //check if swap with blank tile
             return;
         }
          //get the coordenate of the image and split

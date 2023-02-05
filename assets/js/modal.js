@@ -5,7 +5,7 @@ let span = document.getElementsByClassName("close")[0];
 
 
 // When clicks the button, open the modal 
-rule.onclick = function(){
+rule.onclick = function() { 
 modal.style.display = "flex";
 }
 
@@ -14,7 +14,7 @@ span.onclick = function() {
 modal.style.display = "none";
 }
 
-
+// When click to reveal puzzle img
 function openWindow(){
 if (document.getElementById) {
    w = screen.availWidth;
