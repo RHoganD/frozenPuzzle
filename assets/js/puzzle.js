@@ -1,14 +1,14 @@
 //variables
 
-const rows = 3;
-const columns = 5;
+const rows = 4;
+const columns = 4;
 
 let currentTile;
 let otherTile;  
 
 let turns = 0;
 
-let imgOrder = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15"];
+let imgOrder = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"];
 // let imgOrder = ["01", "02", "04", "05", "03", "16", "06", "07", "08", "10", "09", "11", "12", "14", "13", "15" ]; //name of the pictures
 
 // Populate image in the board
@@ -34,6 +34,31 @@ window.onload = function() {
 }
 
 }
+
+    //test code
+    // let pieces = [];
+    // for (let i=1; i <= rows*columns; i++) {
+    //     pieces.push(i.toString()); 
+    // }
+
+    imgOrder.reverse();
+    for (let i =0; i < imgOrder.length; i++) {
+        let j = Math.floor(Math.random() * imgOrder.length);
+
+        //swap
+        // let tmp = pieces[i];
+        // pieces[i] = pieces[j];
+        // pieces[j] = tmp;
+    }
+
+    // for (let i = 0; i < pieces.length; i++) {
+    //     let tile = document.createElement("img");
+    //     tile.src = "./assets/images/" + pieces[i] + ".jpg";
+
+    // }
+//end test code
+
+
 
 //functions
 
