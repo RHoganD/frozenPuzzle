@@ -82,7 +82,7 @@ color:#000;
 font-family: 'sans-serif';
 }
 
- .rules:hover{
+.rules:hover{
 background: coral;
 color: #fff; 
  }
@@ -119,8 +119,8 @@ justify-content: center;
  /* .header */
 
 .header{
-  width: 50%;
-  z-index: 3;
+width: 50%;
+z-index: 3;
   
 }
 
@@ -129,7 +129,6 @@ clear: both;
  margin:0;
  padding:0;
  overflow: hidden;
-  /* display: block; */
   }
 
 .header .menu{
@@ -202,6 +201,11 @@ header .menu-icon{
 }   
 
 
+nav.menu{
+overflow: hidden;
+position: fixed;
+ }
+
 
 .btn{
  height: 50px;
@@ -213,14 +217,13 @@ header .menu-icon{
  background: var(--btn);
  border: 1px solid #b0c4d8;
  border-radius: 20px 5px;
- z-index: 1;
  font-size: 14px;
  font-family: sans-serif;
- cursor: pointer;
+  cursor: pointer;
  }
 
 .btn:hover{
- background: var(--btn-hover);
+ background: coral;
  }
 
 .btn a{
@@ -228,6 +231,15 @@ header .menu-icon{
   color: #fff;
   font-family: 'sans-serif';
 }
+
+.exit{
+  display: block;
+}
+
+#exit , #reveal{
+  display: block;
+}
+
 
 
 /*The Modal (background) */

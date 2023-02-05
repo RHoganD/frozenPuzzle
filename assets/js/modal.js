@@ -1,19 +1,17 @@
 
 let modal = document.getElementById("modalbox");
-
 let btn = document.getElementById("rule");
-
 let span = document.getElementsByClassName("close")[0];
 
 
 // When clicks the button, open the modal 
 btn.onclick = function() {
-  modal.style.display = "flex";
+modal.style.display = "flex";
 }
 
 // When  clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+modal.style.display = "none";
 }
 
 
@@ -37,7 +35,7 @@ gsWindow.document.write
     ('<HTML><HEAD><TITLE>Reveal Puzzle</TITLE></HEAD><BODY><FORM  NAME="form1">' +
     '<img src="./assets/images/elsa_and_anna_frozen.jpg" alt="frozen" class="responsive"/>'+
     ' <H1>Completed Puzzle Image.</H1>' + ' Click the button below to close the window.<br />' +
-    '<INPUT TYPE="button" VALUE="OK"onClick="window.close();"></FORM></BODY>   </HTML>');
+    '<INPUT TYPE="button" VALUE="OK"onClick="window.close();"></FORM></BODY></HTML>');
 }
 
 
