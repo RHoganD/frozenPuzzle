@@ -1,14 +1,14 @@
 //variables
 
-const rows = 4;
-const columns = 4;
+const rows = 3;
+const columns = 5;
 
 let currentTile;
 let otherTile;  
 
 let turns = 0;
 
-let imgOrder = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"];
+let imgOrder = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15"];
 
 // Populate image in the board
 window.onload = function() {

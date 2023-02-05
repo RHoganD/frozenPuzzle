@@ -331,10 +331,10 @@ form{
  }
 
 #board {
-/* width: 608px; */
-width: 492px;
-/* height: 375px; */
-height: 499px;
+width: 608px;
+/* width: 492px; */
+height: 375px;
+/* height: 499px; */
 background-color: lightblue;
 border: 9px solid coral;
 margin: 0 auto;
