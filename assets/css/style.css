@@ -21,7 +21,6 @@
 
 body{
  background-color: #0c67ae;
- /* background-image: url(../images/snow_Backgd.jpg); */
  text-align: center; 
  background-repeat: no-repeat;
          }
@@ -99,6 +98,7 @@ height: auto;
 margin: 60px 200px;
 position: relative;
 display: grid;
+
  }   
    
 .logo{
@@ -151,7 +151,7 @@ header .menu-icon{
   height: 2px;
   width: 18px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: .2s ease-out;
    }
     
 .header .menu-icon .nav-icon:before{
@@ -376,8 +376,47 @@ margin-top: 30px;
   border: 0.5px solid lightblue;
 }
 
+/*For  larger screens */
+@media screen and (max-width: 1298px) {
+
+  #container{
+    max-width: 950px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+
+  #container{
+    max-width: 900px;
+    }
+}
+
+
+
 
 /* For medium screen sizes from 950px wide and down */
+
+@media screen and (max-width: 950px) {
+
+  #container{
+    max-width: 800px;
+    }
+
+
+.logo h1{
+  font-size: 30px;
+  
+   }    
+
+#board{
+width: 430px;
+height: auto;
+flex-direction: rows;
+}
+
+}
+
+
 @media screen and (max-width: 768px) {
   #start{
     font-size: 20px;
@@ -386,21 +425,11 @@ margin-top: 30px;
     padding: 15px 0;
     }
     
-    
-  .logo{
-      font-size: 18px;
-      margin-left: 200px;
-       }
-  
-  #board{
-  width: 430px;
-  height: auto;
-  flex-direction: rows;
-
-}
-}
- 
-  
+    #container{
+      max-width: 750px;
+      }
+  } 
+   
 @media screen and (max-width: 575px) {
 
   #start{
@@ -410,12 +439,15 @@ margin-top: 30px;
     padding: 10px 0;
     }
     
-    
-    .logo{
-      font-size: 15px;
-    
-     }
+    #container{
+      max-width: 650px;
+       }
 
+    .logo h1{
+      font-size: 28px;
+    }
+     
+    
 #board{
 width: 430px;
 height: auto;
@@ -426,3 +458,13 @@ flex-direction: rows;
 }
   
  
+@media screen and (max-width: 400px) {
+
+#container{
+ border: none;
+}
+
+ .logo h1{
+  font-size: 18px;
+ }
+  }
