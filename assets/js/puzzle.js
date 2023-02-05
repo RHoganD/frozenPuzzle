@@ -9,7 +9,6 @@ let otherTile;
 let turns = 0;
 
 let imgOrder = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"];
-// let imgOrder = ["01", "02", "04", "05", "03", "16", "06", "07", "08", "10", "09", "11", "12", "14", "13", "15" ]; //name of the pictures
 
 // Populate image in the board
 window.onload = function() {
@@ -34,45 +33,6 @@ window.onload = function() {
 }
 
 }
-
-//TEST CODE TO RANDON IMG
-//  imgOrder.reverse();
-//  for (let i =0; i < imgOrder.length; i++) {
-//  let j = Math.floor(Math.random() * imgOrder.length);
-
-//         //swap
-//         let tmp = imgOrder[i];
-//         imgOrder[i] = imgOrder[j];
-//         imgOrder[j] = tmp;
-//   }
-  // END OF CODE TO RANDON IMG EXAMPLE 1
-
-
-// TEST CODE EXAMPLE 2
-
-function randomize(values) {
-    let index = values.length,
-      randomIndex;
-  
-    // While there remain elements to shuffle.
-    while (index != 0) {
-      // Pick a remaining element.
-      randomIndex = Math.floor(Math.random() * index);
-      index--;
-  
-      // And swap it with the current element.
-      [values[index], values[randomIndex]] = [values[randomIndex], values[index]];
-    }
-  
-    return values;
-  }
-  
-  randomize(imgOrder);
-
-// END OF CODE EXAMPLE 2
-
-
-
 
 
 //functions
