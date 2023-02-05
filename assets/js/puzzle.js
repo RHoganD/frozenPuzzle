@@ -8,7 +8,7 @@ let otherTile;
 
 let turns = 0;
 
-let imgOrder = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15"];
+let imgOrder = ["02", "07", "03", "04", "05", "06", "08", "01", "14", "10", "11", "12", "09", "13", "15"];
 
 // Populate image in the board
 window.onload = function() {
@@ -59,7 +59,7 @@ function dragDrop() {
 
 
 function dragEnd() {
-        if (!otherTile.src.includes("16.jpg")) {   //check if swap with blank tile
+        if (!otherTile.src.includes("01.jpg")) {   //check if swap with blank tile
             return;
         }
          //get the coordenate of the image and split
@@ -90,5 +90,50 @@ function dragEnd() {
     
             turns +=1;
             document.getElementById("turns").innerText = turns;
-       }
+        }
+
     }
+
+
+     // Validate if complete puzzle
+
+     let completeimgOrder = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15"];  
+      if (imgOrder === completeimgOrder.sort)  {
+        
+      }
+    
+      
+
+
+
+        
+            
+
+
+
+
+
+
+    
+// When click to reveal puzzle img
+function openWindow(){
+    if (document.getElementById) {
+       w = screen.availWidth;
+       h = screen.availHeight;
+    }  
+    
+    let popW = 540, popH = 540;
+    
+    let leftPos = (w-popW)/3;
+    let topPos = (h-popH)/3;
+    
+    gsWindow = window.open('','popup','width=' + popW + ',height=' + popH + 
+                             ',top=' + topPos + ',left=' + leftPos + ', ');
+    
+    gsWindow.document.write 
+        ('<HTML><HEAD><TITLE>Reveal Puzzle</TITLE></HEAD><BODY><FORM  NAME="form1">' +
+        '<img src="./assets/images/elsa_and_anna_frozen.jpg" alt="frozen" class="responsive"/>'+
+        ' <h1>Completed Puzzle Image.</h1>' + ' Click the button below or top to close the window.<br />' +
+        '<INPUT TYPE="button" VALUE="OK"onClick="window.close();"></FORM></BODY></HTML>');
+    }
+    
